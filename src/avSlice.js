@@ -1,34 +1,39 @@
 import { createSlice } from "@reduxjs/toolkit";
+import imgSpeaker from './assets/squirrel_photos-speakers-4109274.jpg';
+import imgMicro from './assets/lograstudio-public-speaking-3926344_1280.jpg';
+import imgWhite from './assets/mnplatypus-whiteboard-2903269_1280.png';
+import imgProj from './assets/publicdomainpictures-business-20031.jpg';
+import imgSign from './assets/geralt-signpost-235079.jpg';
 
 export const avSlice = createSlice({
   name: "av",
   initialState: [
     {
-        img: '../../public/squirrel_photos-speakers-4109274.jpg',
+        img: imgSpeaker,
         name: "Speakers",
         cost: 35,
         quantity: 0,
     },
     {
-        img: '../../public/lograstudio-public-speaking-3926344_1280.jpg',
+        img: imgMicro,
         name: "Microphones",
         cost: 45,
         quantity: 0,
     },
     {
-        img: '../../public/mnplatypus-whiteboard-2903269_1280.png',
+        img: imgWhite,
         name: "Whiteboards",
         cost: 80,
         quantity: 0,
     },
     {
-        img: '../../public/publicdomainpictures-business-20031.jpg',
+        img: imgProj,
         name: "Projectors",
         cost: 200,
         quantity: 0,
     },
     {
-        img: '../../public/geralt-signpost-235079.jpg',
+        img: imgSign,
         name: "Signage",
         cost: 80,
         quantity: 0,
