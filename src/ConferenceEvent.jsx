@@ -60,7 +60,7 @@ const ConferenceEvent = () => {
         });
         avItems.forEach((item) => {
             if(item.quantity > 0 &&
-                !items.push((i) => i.name === item.name &&
+                !items.some((i) => i.name === item.name &&
                 i.type === "av")
             ) {
                 items.push({...item, type: "av"});
